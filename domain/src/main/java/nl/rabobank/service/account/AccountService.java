@@ -1,0 +1,1 @@
+package nl.rabobank.service.account;import nl.rabobank.dto.AccountDTO;/** * Service Interface */public interface AccountService {    /**     * Save a account.     *     * @param accountDTO the entity to save.     * @return the persisted dto.     */    AccountDTO save(AccountDTO accountDTO) throws Exception;}

@@ -1,0 +1,1 @@
+package nl.rabobank.dao;import nl.rabobank.dto.UserDTO;public interface UserDAO {    UserDTO findByUsername(String username);}

@@ -1,0 +1,1 @@
+package nl.rabobank.dao;import nl.rabobank.service.authorizations.PowerOfAttorney;import java.util.List;public interface PowerOfAttorneyDAO {    PowerOfAttorney save(PowerOfAttorney account);    List<PowerOfAttorney> findByGranteeName(String username);}

@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  robobank-app:
+    build: .
+    environment:
+      - _JAVA_OPTIONS=-Xmx512m -Xms256m
+      - MANAGEMENT_METRICS_EXPORT_PROMETHEUS_ENABLED=true
+      - SPRING_DATA_MONGODB_URI=mongodb://robobank-mongodb:27017
+      - SPRING_DATA_MONGODB_DATABASE=robo-assignment
+    # If you want to expose these ports outside your dev PC,
+    # remove the "127.0.0.1:" prefix
+    ports:
+      - 127.0.0.1:8080:8080
+  robobank-mongodb:
+    image: mongo:4.4.12
+    # If you want to expose these ports outside your dev PC,
+    # remove the "127.0.0.1:" prefix
+    ports:
+      - 127.0.0.1:27017:27017

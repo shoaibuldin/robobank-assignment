@@ -1,0 +1,1 @@
+package nl.rabobank.enums;public enum AccountType {    PAYMENT,    SAVINGS}
