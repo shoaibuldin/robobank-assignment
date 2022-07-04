@@ -1,6 +1,9 @@
 package nl.rabobank.mongo.model;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import nl.rabobank.enums.RoleType;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
@@ -8,7 +11,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-import java.io.Serializable;
 
 /**
  * User Model.
@@ -48,6 +50,7 @@ public class UserModel {
         }
         return id != null && id.equals(((UserModel) o).id);
     }
+
     @Override
     public int hashCode() {
         return getClass().hashCode();

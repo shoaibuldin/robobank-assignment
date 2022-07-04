@@ -6,7 +6,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import nl.rabobank.enums.Authorization;
 import nl.rabobank.service.account.Account;
-import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -52,6 +51,7 @@ public class PowerOfAttorneyModel implements Serializable {
         }
         return id != null && id.equals(((PowerOfAttorneyModel) o).id);
     }
+
     @Override
     public int hashCode() {
         return getClass().hashCode();

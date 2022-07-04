@@ -9,6 +9,7 @@ Notice that this is a simplified version of reality.
 ## What's inside
 
 This is a working application which contains:
+
 * Application structure
 * Dependencies and configuration
 * Swagger implementation
@@ -45,29 +46,37 @@ This application service contains 3 modules as following:
 ## Setup
 
 ### Installation
+
 * Setup JDK 11
+
 ```shell script
 sudo apt install default-jdk
 ```
 
 ### Building and deploying the application
+
 The project uses Maven as a build tool.
+
 1. Clean, Build and run tests
+
 ```shell script
 mvn clean install
 ```
 
 2. Run with Docker
+
 ```shell script
 docker-compose up
 ```
 
 ### API Documentation
+
 ```shell script
 http://localhost:8080/swagger-ui.html
 ```
 
 ### Application Metrics
+
 ```shell script
 http://localhost:8080/management/prometheus
 ```
@@ -77,21 +86,25 @@ http://localhost:8080/management/prometheus
 The following are the rest APIs:
 
 * #### Authentication
+
 ```shell script
 Post Request: http://localhost:8080/api/authenticate
 ```
 
 * #### Create Account
+
 ```shell script
 Post Request: http://localhost:8080/api/accounts
 ```
 
 * #### Create Power of Attorney
+
 ```shell script
 Post Request: http://localhost:8080/api/powerofattorney
 ```
 
 * #### Get Power of Attorney of User
+
 ```shell script
 Get Request: http://localhost:8080/api/powerofattorney
 ```

@@ -48,6 +48,7 @@ public class PaymentAccountModel implements Serializable {
         }
         return accountNumber != null && accountNumber.equals(((PaymentAccountModel) o).accountNumber);
     }
+
     @Override
     public int hashCode() {
         return getClass().hashCode();

@@ -50,6 +50,7 @@ public class SavingsAccountModel implements Serializable {
         }
         return accountNumber != null && accountNumber.equals(((SavingsAccountModel) o).accountNumber);
     }
+
     @Override
     public int hashCode() {
         return getClass().hashCode();
